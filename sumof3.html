@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function sumOfDigits() {
+            var num = parseInt(document.getElementById("threeDigitNumber").value);
+            if (num < 100 || num > 999) {
+                document.getElementById("result").innerHTML = "Please enter a valid three-digit number.";
+                return;
+            }
+            var digit1 = Math.floor(num / 100); 
+            var digit2 = Math.floor((num % 100) / 10); 
+            var digit3 = num % 10; // 
+            var sum = digit1 + digit2 + digit3;
+            document.getElementById("result").innerHTML = "Sum of digits: " + sum;
+        }
+    </script>
+</head>
+<body>
+    <h1>Sum of Digits of a Three-Digit Number</h1>
+    Enter a three-digit number: <input type="text" id="threeDigitNumber"><br><br>
+    <button onclick="sumOfDigits()">Calculate Sum</button>
+    <p id="result"></p>
+</body>
+</html>

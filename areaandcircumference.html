@@ -1,0 +1,19 @@
+
+<html>
+    <head>
+        <script>
+            function find() { 
+                var radius = parseInt(document.getElementById("rad").value);
+                var area = Math.PI * (radius ** 2);
+                var circumference = 2 * (Math.PI * radius);
+                document.getElementById("circle").innerHTML = "The area of the circle is: " + area.toFixed(2) + "<br> The circumference of the circle is: " + circumference.toFixed(2);   
+            }
+        </script>
+    </head>
+    <body>
+        Enter the radius <input type="text" id="rad"> <br><br>
+        <label id="circle">Area & circumference will be displayed here.</label> <br><br>    
+        
+        <input type="button" value="Find Area & Circumference" onclick="find()">
+    </body>
+</html>

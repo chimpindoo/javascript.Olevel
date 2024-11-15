@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script>
+            function reverse(){
+                var num = parseInt(document.getElementById("rev").value);
+                var s = 0;
+                var r = num%10;
+                var s = s*10+r ;
+                var num = parseInt(num/10)
+
+                var r = num%10;
+                var s = s*10+r ;
+                var num = parseInt(num/10)
+            
+                var r = num%10;
+                var s = s*10+r ;
+                var num = parseInt(num/10)
+
+                document.getElementById("numRev").innerHTML=" reverse of no is :" + s ;
+            }
+        </script>
+    </head>
+    <body>
+        enter the number :<input type="text" id="rev"><br><br>
+        <label id="numRev"> reverse is :</label><br><br>
+
+        <input type="button" value="click on" onclick="reverse()">
+    </body>
+</html>

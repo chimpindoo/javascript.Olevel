@@ -1,0 +1,51 @@
+ <!-- <html>
+    <head></head>
+    <body>
+        <script>
+            function percentage(){
+                var math = parseInt(document.getElementById("marksMath").value);
+                var science = parseInt(document.getElementById("marksSci").value);
+                var english = parseInt(document.getElementById("marksEng").value);
+                var hindi = parseInt(document.getElementById("marksHin").value);
+                var economics = parseInt(document.getElementById("marksEco").value);
+                var totalMarks = 500; 
+                var totalPercentage = ((math + science + english + hindi + economics) / totalMarks) * 100;
+                document.getElementById("lblSi").innerHTML = "This is the percentage: " + totalPercentage.toFixed(2) + " %";
+            }
+        </script>
+
+        <h1>PROGRAM TO FIND TOTAL PERCENTAGE</h1>
+        Enter maths marks <input type="text" id="marksMath"><br><br>
+        Enter science marks <input type="text" id="marksSci"><br><br>
+        Enter English marks <input type="text" id="marksEng"><br><br>
+        Enter Hindi marks <input type="text" id="marksHin"><br><br>
+        Enter Economics marks <input type="text" id="marksEco"><br><br>
+       
+        <label id="lblSi">The percentage is: </label> <br/>
+
+        <br> <input type="button" value="Total Percentage" onclick="percentage()">
+    </body>
+</html>  -->
+
+
+
+
+
+<html>
+    <head>
+        <script>
+            function find() { 
+                var radius = parseInt(document.getElementById("rad").value);
+                var area = Math.PI * (radius ** 2);
+                var circumference = 2 * (Math.PI * radius);
+                document.getElementById("circle").innerHTML = "The area of the circle is: " + area.toFixed(2) + "<br> The circumference of the circle is: " + circumference.toFixed(2);   
+            }
+        </script>
+    </head>
+    <body>
+        Enter the radius <input type="text" id="rad"> <br><br>
+        <label id="circle">Area & circumference will be displayed here.</label> <br><br>    
+        
+        <input type="button" value="Find Area & Circumference" onclick="find()">
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            function findSp(){
+                var cp = parseInt(document.getElementById("costP").value);
+                var profit = parseInt(document.getElementById("prof").value);
+                var sp = cp + profit ;
+                document.getElementById("sellPrice").innerHTML= " the selling price is : " + sp ;
+            }
+
+        </script>
+    </head>
+    <body>
+        enter the cost price <input type= " text" id="costP" ><br><br>
+        enter the profit <input type="text" id="prof" > <br>
+        <label id="sellPrice"> the selling price is :</label><br><br>
+
+        <input type="button"  value="selling price" onclick="findSp()">
+
+    </body>
+</html>

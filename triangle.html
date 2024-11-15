@@ -1,0 +1,26 @@
+
+<html>
+    <head>
+        <script>
+            function find(){
+                var breath = parseInt(document.getElementById("base").value);
+                var lenght = parseInt(document.getElementById("height").value);
+                var area = lenght * breath ;
+                var perimeter = 2*(lenght+breath) ;
+                document.getElementById("sqrArea").innerHTML= "the area of square :" + area.toFixed(2);
+                document.getElementById("sqrperi").innerHTML= "the perimeter of square :" + perimeter.toFixed(2);
+           }
+
+        </script>
+    </head>
+    <body>
+        enter the breath <input type="text" id="base"><br><br>
+        enter the height <input type="text" id="height"><br><br>
+
+        <label id="sqrArea"> " area of square : " </label><br><br>
+        <label id="sqrperi"> " perimeter of square : " </label><br><br>
+
+        <input type="button" value="area & perimeter of square :" onclick="find()">
+    </body>
+
+</html>

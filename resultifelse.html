@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Checker</title>
+    <script>
+        function result(){
+            var value1 = parseInt(document.getElementById("input1").value);
+            var result;
+            if (value1 > 33){
+                result = "congrat! you are pass";
+            } else {
+                result = "sorry you are fail";
+            }
+            document.getElementById('result').innerHTML = "Your result: " + result;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="input1"><br><br>
+    <label id="result">Result = </label><br><br>
+    <input type="button" value="Check Result" onclick="result()">
+</body>
+</html>

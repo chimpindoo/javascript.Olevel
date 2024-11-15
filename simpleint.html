@@ -1,0 +1,23 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            function findSi(){
+                var pr = parse(int(document.getElementbyid("txtP").value));
+                var rate = parse(int(document.getElementbyid("txtR").value));
+                var time = parse(int(document.getElementbyid("txtT").value));
+                var si = pr*rate*time/100;
+                document.getElementbyid("lblSi").innerHTML ="the simple interest is : " + si; 
+            }
+        </script>
+
+        <h1>PROGRAM TO FIND FIND SIMPLE INTEREST </h1>
+        Enter Principal amount <input type="text" id="txtP"> <br/><br/>
+        enter rate of interest <input type="text" id="txtR"> <br/><br/>
+        enter the time period <input type="text" id="txtT"> <br/><br/>
+
+        <label id="lblSi" > the simple interest is : </label> <br/>
+
+        <br> <input type="button" value="find simple interest" onclick="findSi()">
+    </body>
+</html>
