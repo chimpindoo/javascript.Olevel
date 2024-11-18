@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script>
+            function find(){
+                var x = parseInt(document.getElementById("x").value);
+                var y = parseInt(document.getElementById("y").value);
+                var plot ;
+                if(x == 0){
+                    if (y == 0){
+                        plot="origin"
+                    }else {
+                        plot="y-axis"
+                    }
+                }else {
+                    if (y == 0){
+                        plot="x-axis"
+                    }else {
+                        plot="plot-area"
+                    }
+
+                }
+                document.getElementById("plot").innerHTML= "find the place" + plot;
+            }
+        </script>
+    </head>
+    <body>
+        enter value of x-axis <input type="text" id="x"><br><br>
+        enter value of y-axis <input type="text" id="y"><br><br>
+        <label id="plot"> point lie </label><br><br>
+        <input type="button" value="find" onclick="find()">
+    </body>
+</html>
