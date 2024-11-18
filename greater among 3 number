@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script>
+            function greater(){
+                var a = parseInt(document.getElementById("first").value);
+                var b = parseInt(document.getElementById("second").value);
+                var c = parseInt(document.getElementById("third").value);
+                var num ;
+
+                if (a > b){
+                    num = a ; 
+                  if ( a > c) {
+                    num = a ;
+                  }else {
+                    num = c
+                  }
+                }else {
+                   if (b > c){
+                     num = b
+                   }else {
+                     num = c
+                   } 
+                }
+                 
+            }
+        </script>
+    </head>
+    <body>
+        enter the first value <input type=text id="first">
+        enter the second value <input type="text" id="second">
+        enter the third value <input type="text" id="third">
+        <label id = greater> the greatest among there is :</label>
+
+        <input type="button" value="find greater" onclick="greater()">
+    </body>
+</html>
